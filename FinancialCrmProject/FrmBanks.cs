@@ -24,6 +24,8 @@ namespace FinancialCrmProject
         private void FrmBanks_Load(object sender, EventArgs e)
         {
 
+            btnBanks.Enabled = false;
+
             // Banka Bakiyeleri
 
             var ziraatBanks = db.Banks.Where(x => x.BankTitle == "Ziraat Bankası").Select(y => y.BankBalance).FirstOrDefault();
@@ -60,7 +62,24 @@ namespace FinancialCrmProject
         {
             FrmBilling frmbll = new FrmBilling();
             frmbll.Show();
+            this.Hide(); // arka planda açık kalmaya devam ettiği için RAM de yer kaplar ve performance sorunları doğurabilir.!! */ this.Close(); olarak revize edilmesi daha doğru olur. /*
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            FrmDashboard frmdas = new FrmDashboard();
+            frmdas.Show();
             this.Hide();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnBankTransaction_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

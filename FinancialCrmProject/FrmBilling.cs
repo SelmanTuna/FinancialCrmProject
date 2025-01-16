@@ -23,6 +23,8 @@ namespace FinancialCrmProject
         {
             var values = db.Bills.ToList();
             dataGridView1.DataSource = values;
+
+            btnBills.Enabled = false;
         }
 
         private void btnOdemeList_Click(object sender, EventArgs e)
@@ -89,6 +91,30 @@ namespace FinancialCrmProject
         {
             FrmBanks frmbnk = new FrmBanks();
             frmbnk.Show();
+            this.Hide();
+        }
+
+        private void btnExpense_Click(object sender, EventArgs e) 
+        {
+
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            FrmDashboard frmdas = new FrmDashboard();
+            frmdas.Show();
+            this.Hide();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+           this.Close();
+        }
+
+        private void btnCategories_Click(object sender, EventArgs e)
+        {
+            FrmCategories frmcat = new FrmCategories();
+            frmcat.Show();
             this.Hide();
         }
     }
