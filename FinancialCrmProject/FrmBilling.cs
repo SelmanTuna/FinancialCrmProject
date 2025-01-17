@@ -55,10 +55,11 @@ namespace FinancialCrmProject
 
         private void btnOdemeDelete_Click(object sender, EventArgs e)
         {
-            int id = int.Parse(txtOdemeId.Text);
-            var removeValue = db.Bills.Find(id);
-            db.Bills.Remove(removeValue);
-            db.SaveChanges();
+            int id = int.Parse(txtOdemeId.Text); // text den ıd yi oku, 
+            var removeValue = db.Bills.Find(id); // okuduğun id yi bul ve objeye ata.
+
+            db.Bills.Remove(removeValue); // ilgili datayı sil
+            db.SaveChanges(); // db ye kaydet. 
             MessageBox.Show("Ödeme Başarılılı Bir Şekilde Silindi.", "Ödeme & Faturalar", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
             var values = db.Bills.ToList();
@@ -78,32 +79,32 @@ namespace FinancialCrmProject
             values.BillTitle = title;
             values.BillPeriod = period;
             values.BillAmount = amount;
+
             db.SaveChanges();
             MessageBox.Show("Ödeme İşlemi Başarıyla Güncellendi.", "Ödeme & Faturalar", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             var values2 = db.Bills.ToList();
             dataGridView1.DataSource = values2;
-
-
         }
 
         private void btnBanks_Click(object sender, EventArgs e) 
         {
             FrmBanks frmbnk = new FrmBanks();
             frmbnk.Show();
-            this.Hide();
+            //this.Hide();
         }
 
         private void btnExpense_Click(object sender, EventArgs e) 
         {
-
+            FrmSpendings frmspn = new FrmSpendings();
+            frmspn.Show();
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             FrmDashboard frmdas = new FrmDashboard();
             frmdas.Show();
-            this.Hide();
+            //this.Hide();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -115,7 +116,19 @@ namespace FinancialCrmProject
         {
             FrmCategories frmcat = new FrmCategories();
             frmcat.Show();
-            this.Hide();
+            //this.Hide();
+        }
+
+        private void btnSetting_Click(object sender, EventArgs e)
+        {
+            FrmSettings frmset = new FrmSettings();
+            frmset.Show();
+        }
+
+        private void btnBankTransaction_Click(object sender, EventArgs e)
+        {
+            FrmBankTransaction frmBnkTr = new FrmBankTransaction();
+            frmBnkTr.Show();
         }
     }
 }

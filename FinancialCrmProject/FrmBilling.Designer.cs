@@ -52,10 +52,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -69,9 +72,9 @@
             this.panel1.Controls.Add(this.btnBills);
             this.panel1.Controls.Add(this.btnBanks);
             this.panel1.Controls.Add(this.btnCategories);
-            this.panel1.Location = new System.Drawing.Point(2, 3);
+            this.panel1.Location = new System.Drawing.Point(2, 70);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(249, 687);
+            this.panel1.Size = new System.Drawing.Size(249, 636);
             this.panel1.TabIndex = 1;
             // 
             // btnDashboard
@@ -114,6 +117,7 @@
             this.btnSetting.TabIndex = 5;
             this.btnSetting.Text = "Ayarlar";
             this.btnSetting.UseVisualStyleBackColor = false;
+            this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
             // 
             // btnBankTransaction
             // 
@@ -127,6 +131,7 @@
             this.btnBankTransaction.TabIndex = 4;
             this.btnBankTransaction.Text = "Banka Hareketleri";
             this.btnBankTransaction.UseVisualStyleBackColor = false;
+            this.btnBankTransaction.Click += new System.EventHandler(this.btnBankTransaction_Click);
             // 
             // btnExpense
             // 
@@ -185,6 +190,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel2.Controls.Add(this.btnOdemeUpdate);
             this.panel2.Controls.Add(this.btnOdemeDelete);
             this.panel2.Controls.Add(this.btnOdemeCreate);
@@ -197,16 +203,16 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.txtOdemeId);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(257, 3);
+            this.panel2.Location = new System.Drawing.Point(257, 70);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(998, 247);
+            this.panel2.Size = new System.Drawing.Size(998, 254);
             this.panel2.TabIndex = 2;
             // 
             // btnOdemeUpdate
             // 
-            this.btnOdemeUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnOdemeUpdate.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnOdemeUpdate.Location = new System.Drawing.Point(549, 165);
+            this.btnOdemeUpdate.BackColor = System.Drawing.Color.DarkViolet;
+            this.btnOdemeUpdate.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnOdemeUpdate.Location = new System.Drawing.Point(493, 181);
             this.btnOdemeUpdate.Name = "btnOdemeUpdate";
             this.btnOdemeUpdate.Size = new System.Drawing.Size(153, 36);
             this.btnOdemeUpdate.TabIndex = 11;
@@ -216,9 +222,9 @@
             // 
             // btnOdemeDelete
             // 
-            this.btnOdemeDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnOdemeDelete.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnOdemeDelete.Location = new System.Drawing.Point(549, 119);
+            this.btnOdemeDelete.BackColor = System.Drawing.Color.DarkViolet;
+            this.btnOdemeDelete.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnOdemeDelete.Location = new System.Drawing.Point(493, 135);
             this.btnOdemeDelete.Name = "btnOdemeDelete";
             this.btnOdemeDelete.Size = new System.Drawing.Size(153, 36);
             this.btnOdemeDelete.TabIndex = 10;
@@ -228,9 +234,9 @@
             // 
             // btnOdemeCreate
             // 
-            this.btnOdemeCreate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnOdemeCreate.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnOdemeCreate.Location = new System.Drawing.Point(549, 67);
+            this.btnOdemeCreate.BackColor = System.Drawing.Color.DarkViolet;
+            this.btnOdemeCreate.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnOdemeCreate.Location = new System.Drawing.Point(493, 83);
             this.btnOdemeCreate.Name = "btnOdemeCreate";
             this.btnOdemeCreate.Size = new System.Drawing.Size(153, 36);
             this.btnOdemeCreate.TabIndex = 9;
@@ -240,9 +246,9 @@
             // 
             // btnOdemeList
             // 
-            this.btnOdemeList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnOdemeList.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnOdemeList.Location = new System.Drawing.Point(549, 18);
+            this.btnOdemeList.BackColor = System.Drawing.Color.DarkViolet;
+            this.btnOdemeList.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnOdemeList.Location = new System.Drawing.Point(493, 34);
             this.btnOdemeList.Name = "btnOdemeList";
             this.btnOdemeList.Size = new System.Drawing.Size(153, 36);
             this.btnOdemeList.TabIndex = 8;
@@ -252,18 +258,18 @@
             // 
             // txtOdemeAmount
             // 
-            this.txtOdemeAmount.BackColor = System.Drawing.Color.IndianRed;
+            this.txtOdemeAmount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.txtOdemeAmount.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtOdemeAmount.Location = new System.Drawing.Point(126, 166);
+            this.txtOdemeAmount.Location = new System.Drawing.Point(206, 186);
             this.txtOdemeAmount.Name = "txtOdemeAmount";
-            this.txtOdemeAmount.Size = new System.Drawing.Size(373, 28);
+            this.txtOdemeAmount.Size = new System.Drawing.Size(217, 28);
             this.txtOdemeAmount.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(44, 67);
+            this.label4.Location = new System.Drawing.Point(124, 87);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(72, 24);
             this.label4.TabIndex = 6;
@@ -271,18 +277,18 @@
             // 
             // txtOdemeHead
             // 
-            this.txtOdemeHead.BackColor = System.Drawing.Color.IndianRed;
+            this.txtOdemeHead.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.txtOdemeHead.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtOdemeHead.Location = new System.Drawing.Point(126, 115);
+            this.txtOdemeHead.Location = new System.Drawing.Point(206, 135);
             this.txtOdemeHead.Name = "txtOdemeHead";
-            this.txtOdemeHead.Size = new System.Drawing.Size(373, 28);
+            this.txtOdemeHead.Size = new System.Drawing.Size(217, 28);
             this.txtOdemeHead.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(44, 166);
+            this.label3.Location = new System.Drawing.Point(124, 186);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(77, 24);
             this.label3.TabIndex = 4;
@@ -290,18 +296,18 @@
             // 
             // txtOdemePeriot
             // 
-            this.txtOdemePeriot.BackColor = System.Drawing.Color.IndianRed;
+            this.txtOdemePeriot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.txtOdemePeriot.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtOdemePeriot.Location = new System.Drawing.Point(126, 67);
+            this.txtOdemePeriot.Location = new System.Drawing.Point(206, 87);
             this.txtOdemePeriot.Name = "txtOdemePeriot";
-            this.txtOdemePeriot.Size = new System.Drawing.Size(373, 28);
+            this.txtOdemePeriot.Size = new System.Drawing.Size(217, 28);
             this.txtOdemePeriot.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(48, 115);
+            this.label2.Location = new System.Drawing.Point(128, 135);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(70, 24);
             this.label2.TabIndex = 2;
@@ -309,18 +315,18 @@
             // 
             // txtOdemeId
             // 
-            this.txtOdemeId.BackColor = System.Drawing.Color.IndianRed;
+            this.txtOdemeId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.txtOdemeId.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtOdemeId.Location = new System.Drawing.Point(126, 18);
+            this.txtOdemeId.Location = new System.Drawing.Point(206, 38);
             this.txtOdemeId.Name = "txtOdemeId";
-            this.txtOdemeId.Size = new System.Drawing.Size(373, 28);
+            this.txtOdemeId.Size = new System.Drawing.Size(217, 28);
             this.txtOdemeId.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(15, 22);
+            this.label1.Location = new System.Drawing.Point(95, 42);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(103, 24);
             this.label1.TabIndex = 0;
@@ -329,9 +335,9 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.dataGridView1);
-            this.panel3.Location = new System.Drawing.Point(257, 256);
+            this.panel3.Location = new System.Drawing.Point(257, 330);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(998, 434);
+            this.panel3.Size = new System.Drawing.Size(998, 376);
             this.panel3.TabIndex = 3;
             // 
             // dataGridView1
@@ -343,28 +349,52 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(998, 434);
+            this.dataGridView1.Size = new System.Drawing.Size(998, 376);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.panel4.Controls.Add(this.labelControl1);
+            this.panel4.Location = new System.Drawing.Point(2, -1);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1267, 65);
+            this.panel4.TabIndex = 4;
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.labelControl1.Appearance.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Appearance.Options.UseForeColor = true;
+            this.labelControl1.Location = new System.Drawing.Point(32, 22);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(164, 28);
+            this.labelControl1.TabIndex = 2;
+            this.labelControl1.Text = "Ödemeler Formu";
             // 
             // FrmBilling
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(1267, 692);
+            this.ClientSize = new System.Drawing.Size(1265, 709);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.MaximumSize = new System.Drawing.Size(1285, 739);
-            this.MinimumSize = new System.Drawing.Size(1285, 739);
+            this.MaximumSize = new System.Drawing.Size(1283, 756);
+            this.MinimumSize = new System.Drawing.Size(1283, 756);
             this.Name = "FrmBilling";
-            this.Text = "Ödeme & Fatura";
+            this.Text = "FrmBilling";
             this.Load += new System.EventHandler(this.FrmBilling_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -395,5 +425,7 @@
         private System.Windows.Forms.Button btnOdemeList;
         private System.Windows.Forms.Button btnOdemeUpdate;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Panel panel4;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
     }
 }

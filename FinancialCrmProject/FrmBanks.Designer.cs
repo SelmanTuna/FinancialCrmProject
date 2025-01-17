@@ -440,15 +440,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(1267, 692);
+            this.ClientSize = new System.Drawing.Size(1265, 709);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.MaximumSize = new System.Drawing.Size(1285, 739);
-            this.MinimumSize = new System.Drawing.Size(1285, 739);
+            this.MaximumSize = new System.Drawing.Size(1283, 756);
+            this.MinimumSize = new System.Drawing.Size(1283, 756);
             this.Name = "FrmBanks";
             this.Text = "FrmBanks";
             this.Load += new System.EventHandler(this.FrmBanks_Load);

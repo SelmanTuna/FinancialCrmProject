@@ -101,11 +101,11 @@
     <Compile Include="FrmSettings.Designer.cs">
       <DependentUpon>FrmSettings.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmSpending.cs">
+    <Compile Include="FrmSpendings.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmSpending.Designer.cs">
-      <DependentUpon>FrmSpending.cs</DependentUpon>
+    <Compile Include="FrmSpendings.Designer.cs">
+      <DependentUpon>FrmSpendings.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\BankProcesses.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -148,11 +148,23 @@
     <EmbeddedResource Include="FrmBanks.resx">
       <DependentUpon>FrmBanks.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmBankTransaction.resx">
+      <DependentUpon>FrmBankTransaction.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmBilling.resx">
       <DependentUpon>FrmBilling.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmCategories.resx">
+      <DependentUpon>FrmCategories.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmDashboard.resx">
       <DependentUpon>FrmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSettings.resx">
+      <DependentUpon>FrmSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSpendings.resx">
+      <DependentUpon>FrmSpendings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

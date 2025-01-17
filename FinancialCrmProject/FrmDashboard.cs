@@ -125,7 +125,7 @@ namespace FinancialCrmProject
 
         private void btnExpense_Click(object sender, EventArgs e)
         {
-            FrmSpending frmspn = new FrmSpending();
+            FrmSpendings frmspn = new FrmSpendings();
             frmspn.Show();
             //this.Hide();
         }
