@@ -57,7 +57,6 @@ namespace FinancialCrmProject
             {
                 series2.Points.AddXY(item.BillTitle, item.BillAmount);
             }
-
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -106,42 +105,42 @@ namespace FinancialCrmProject
         {
             FrmCategories frmcat = new FrmCategories();
             frmcat.Show();
-            //this.Hide();
+           this.Hide();
         }
 
         private void btnBanks_Click(object sender, EventArgs e)
         {
             FrmBanks frmbnk = new FrmBanks();
             frmbnk.Show();
-            //this.Hide();
+           this.Hide();
         }
 
         private void btnBills_Click(object sender, EventArgs e)
         {
             FrmBilling frmbl = new FrmBilling();
             frmbl.Show();
-            //this.Hide();
+           this.Hide();
         }
 
         private void btnExpense_Click(object sender, EventArgs e)
         {
             FrmSpendings frmspn = new FrmSpendings();
             frmspn.Show();
-            //this.Hide();
+            this.Hide();
         }
 
         private void btnBankTransaction_Click(object sender, EventArgs e)
         {
             FrmBankTransaction frmtra = new FrmBankTransaction();
             frmtra.Show();
-            //this.Hide();
+            this.Hide();
         }
 
         private void btnSetting_Click(object sender, EventArgs e)
         {
             FrmSettings frmset = new FrmSettings();
             frmset.Show();
-            //this.Hide();
+            this.Hide();
         }
     }
 }

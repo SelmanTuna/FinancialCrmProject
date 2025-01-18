@@ -63,13 +63,14 @@ namespace FinancialCrmProject
         {
             FrmBilling frmbl = new FrmBilling();
             frmbl.Show();
-            //this.Hide();
+            this.Hide();
         }
 
         private void btnExpense_Click(object sender, EventArgs e)
         {
             FrmSpendings frmspn = new FrmSpendings();
             frmspn.Show();
+            this.Hide();
         }
 
         private void btnCategoryDelete_Click(object sender, EventArgs e)
@@ -108,24 +109,28 @@ namespace FinancialCrmProject
         {
             FrmSettings frmset = new FrmSettings();
             frmset.Show();
+            this.Hide();
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             FrmDashboard frmdas = new FrmDashboard();
             frmdas.Show();
+            this.Hide();
         }
 
         private void btnBankTransaction_Click(object sender, EventArgs e)
         {
             FrmBankTransaction frmBnkTr = new FrmBankTransaction();
             frmBnkTr.Show();
+            this.Hide();
         }
 
         private void btnBanks_Click(object sender, EventArgs e)
         {
             FrmBanks frmbnk = new FrmBanks();
             frmbnk.Show();
+            this.Hide();
         }
     }
 }

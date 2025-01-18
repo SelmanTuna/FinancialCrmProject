@@ -386,6 +386,7 @@
             this.MaximumSize = new System.Drawing.Size(1283, 756);
             this.MinimumSize = new System.Drawing.Size(1283, 756);
             this.Name = "FrmBilling";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmBilling";
             this.Load += new System.EventHandler(this.FrmBilling_Load);
             this.panel1.ResumeLayout(false);

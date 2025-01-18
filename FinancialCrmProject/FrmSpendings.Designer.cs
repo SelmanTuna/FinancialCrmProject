@@ -407,6 +407,7 @@
             this.MaximumSize = new System.Drawing.Size(1283, 756);
             this.MinimumSize = new System.Drawing.Size(1283, 756);
             this.Name = "FrmSpendings";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmSpending";
             this.Load += new System.EventHandler(this.FrmSpendings_Load);
             this.panel4.ResumeLayout(false);

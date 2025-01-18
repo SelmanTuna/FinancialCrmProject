@@ -123,6 +123,7 @@
             this.btnSetting.TabIndex = 5;
             this.btnSetting.Text = "Ayarlar";
             this.btnSetting.UseVisualStyleBackColor = false;
+            this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
             // 
             // btnBankTransaction
             // 
@@ -164,6 +165,7 @@
             this.btnBills.TabIndex = 2;
             this.btnBills.Text = "Faturalar";
             this.btnBills.UseVisualStyleBackColor = false;
+            this.btnBills.Click += new System.EventHandler(this.btnBills_Click);
             // 
             // btnBanks
             // 
@@ -190,6 +192,7 @@
             this.btnCategories.TabIndex = 0;
             this.btnCategories.Text = "Kategoriler";
             this.btnCategories.UseVisualStyleBackColor = false;
+            this.btnCategories.Click += new System.EventHandler(this.btnCategories_Click);
             // 
             // panel2
             // 
@@ -450,6 +453,7 @@
             this.MaximumSize = new System.Drawing.Size(1283, 756);
             this.MinimumSize = new System.Drawing.Size(1283, 756);
             this.Name = "FrmBanks";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmBanks";
             this.Load += new System.EventHandler(this.FrmBanks_Load);
             this.panel1.ResumeLayout(false);

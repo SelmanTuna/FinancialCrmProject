@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel4 = new System.Windows.Forms.Panel();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnOdemeUpdate = new System.Windows.Forms.Button();
-            this.btnOdemeDelete = new System.Windows.Forms.Button();
-            this.btnOdemeCreate = new System.Windows.Forms.Button();
-            this.btnOdemeList = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtOdemePeriot = new System.Windows.Forms.TextBox();
-            this.txtOdemeId = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.lblTotalBankBalance = new DevExpress.XtraEditors.LabelControl();
+            this.lblBankBalance = new DevExpress.XtraEditors.LabelControl();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.lblOutgoingAmount = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.lblIncomingAmount = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
@@ -50,11 +50,17 @@
             this.btnBills = new System.Windows.Forms.Button();
             this.btnBanks = new System.Windows.Forms.Button();
             this.btnCategories = new System.Windows.Forms.Button();
+            this.timerBnkTransaction = new System.Windows.Forms.Timer(this.components);
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel4.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel4
@@ -78,121 +84,118 @@
             this.labelControl1.TabIndex = 2;
             this.labelControl1.Text = "Banka Hareketleri Formu";
             // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.dataGridView1);
-            this.panel3.Location = new System.Drawing.Point(260, 264);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(998, 434);
-            this.panel3.TabIndex = 10;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(998, 444);
-            this.dataGridView1.TabIndex = 0;
-            // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.btnOdemeUpdate);
-            this.panel2.Controls.Add(this.btnOdemeDelete);
-            this.panel2.Controls.Add(this.btnOdemeCreate);
-            this.panel2.Controls.Add(this.btnOdemeList);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.txtOdemePeriot);
-            this.panel2.Controls.Add(this.txtOdemeId);
-            this.panel2.Controls.Add(this.label1);
+            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel2.Controls.Add(this.panel7);
+            this.panel2.Controls.Add(this.panel6);
+            this.panel2.Controls.Add(this.panel5);
             this.panel2.Location = new System.Drawing.Point(260, 69);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(998, 189);
+            this.panel2.Size = new System.Drawing.Size(1006, 304);
             this.panel2.TabIndex = 9;
             // 
-            // btnOdemeUpdate
+            // panel7
             // 
-            this.btnOdemeUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnOdemeUpdate.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnOdemeUpdate.Location = new System.Drawing.Point(496, 190);
-            this.btnOdemeUpdate.Name = "btnOdemeUpdate";
-            this.btnOdemeUpdate.Size = new System.Drawing.Size(153, 36);
-            this.btnOdemeUpdate.TabIndex = 11;
-            this.btnOdemeUpdate.Text = "Kategori Güncelle";
-            this.btnOdemeUpdate.UseVisualStyleBackColor = false;
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panel7.Controls.Add(this.lblTotalBankBalance);
+            this.panel7.Controls.Add(this.lblBankBalance);
+            this.panel7.Location = new System.Drawing.Point(646, 32);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(313, 239);
+            this.panel7.TabIndex = 16;
             // 
-            // btnOdemeDelete
+            // lblTotalBankBalance
             // 
-            this.btnOdemeDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnOdemeDelete.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnOdemeDelete.Location = new System.Drawing.Point(337, 190);
-            this.btnOdemeDelete.Name = "btnOdemeDelete";
-            this.btnOdemeDelete.Size = new System.Drawing.Size(153, 36);
-            this.btnOdemeDelete.TabIndex = 10;
-            this.btnOdemeDelete.Text = "Kategori Sil";
-            this.btnOdemeDelete.UseVisualStyleBackColor = false;
+            this.lblTotalBankBalance.Appearance.Font = new System.Drawing.Font("Calibri", 22F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.lblTotalBankBalance.Appearance.ForeColor = System.Drawing.Color.White;
+            this.lblTotalBankBalance.Appearance.Options.UseFont = true;
+            this.lblTotalBankBalance.Appearance.Options.UseForeColor = true;
+            this.lblTotalBankBalance.Location = new System.Drawing.Point(15, 76);
+            this.lblTotalBankBalance.Name = "lblTotalBankBalance";
+            this.lblTotalBankBalance.Size = new System.Drawing.Size(94, 45);
+            this.lblTotalBankBalance.TabIndex = 6;
+            this.lblTotalBankBalance.Text = "0.00 ₺";
             // 
-            // btnOdemeCreate
+            // lblBankBalance
             // 
-            this.btnOdemeCreate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnOdemeCreate.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnOdemeCreate.Location = new System.Drawing.Point(178, 190);
-            this.btnOdemeCreate.Name = "btnOdemeCreate";
-            this.btnOdemeCreate.Size = new System.Drawing.Size(153, 36);
-            this.btnOdemeCreate.TabIndex = 9;
-            this.btnOdemeCreate.Text = "Yeni Kategori";
-            this.btnOdemeCreate.UseVisualStyleBackColor = false;
+            this.lblBankBalance.Appearance.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Bold);
+            this.lblBankBalance.Appearance.ForeColor = System.Drawing.Color.White;
+            this.lblBankBalance.Appearance.Options.UseFont = true;
+            this.lblBankBalance.Appearance.Options.UseForeColor = true;
+            this.lblBankBalance.Location = new System.Drawing.Point(15, 23);
+            this.lblBankBalance.Name = "lblBankBalance";
+            this.lblBankBalance.Size = new System.Drawing.Size(284, 33);
+            this.lblBankBalance.TabIndex = 4;
+            this.lblBankBalance.Text = "Banka Hesap Bakiyelerim";
             // 
-            // btnOdemeList
+            // panel6
             // 
-            this.btnOdemeList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnOdemeList.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnOdemeList.Location = new System.Drawing.Point(19, 190);
-            this.btnOdemeList.Name = "btnOdemeList";
-            this.btnOdemeList.Size = new System.Drawing.Size(153, 36);
-            this.btnOdemeList.TabIndex = 8;
-            this.btnOdemeList.Text = "Kategori Listesi";
-            this.btnOdemeList.UseVisualStyleBackColor = false;
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.panel6.Controls.Add(this.lblOutgoingAmount);
+            this.panel6.Controls.Add(this.labelControl4);
+            this.panel6.Location = new System.Drawing.Point(338, 32);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(274, 239);
+            this.panel6.TabIndex = 15;
             // 
-            // label4
+            // lblOutgoingAmount
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(45, 93);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(124, 24);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Kategori Adı :";
+            this.lblOutgoingAmount.Appearance.Font = new System.Drawing.Font("Calibri", 22F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.lblOutgoingAmount.Appearance.ForeColor = System.Drawing.Color.White;
+            this.lblOutgoingAmount.Appearance.Options.UseFont = true;
+            this.lblOutgoingAmount.Appearance.Options.UseForeColor = true;
+            this.lblOutgoingAmount.Location = new System.Drawing.Point(19, 76);
+            this.lblOutgoingAmount.Name = "lblOutgoingAmount";
+            this.lblOutgoingAmount.Size = new System.Drawing.Size(94, 45);
+            this.lblOutgoingAmount.TabIndex = 5;
+            this.lblOutgoingAmount.Text = "0.00 ₺";
             // 
-            // txtOdemePeriot
+            // labelControl4
             // 
-            this.txtOdemePeriot.BackColor = System.Drawing.Color.IndianRed;
-            this.txtOdemePeriot.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtOdemePeriot.Location = new System.Drawing.Point(171, 93);
-            this.txtOdemePeriot.Name = "txtOdemePeriot";
-            this.txtOdemePeriot.Size = new System.Drawing.Size(214, 28);
-            this.txtOdemePeriot.TabIndex = 3;
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Bold);
+            this.labelControl4.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl4.Appearance.Options.UseFont = true;
+            this.labelControl4.Appearance.Options.UseForeColor = true;
+            this.labelControl4.Location = new System.Drawing.Point(19, 23);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(239, 33);
+            this.labelControl4.TabIndex = 4;
+            this.labelControl4.Text = "Giden Toplam Havale";
             // 
-            // txtOdemeId
+            // panel5
             // 
-            this.txtOdemeId.BackColor = System.Drawing.Color.IndianRed;
-            this.txtOdemeId.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtOdemeId.Location = new System.Drawing.Point(171, 44);
-            this.txtOdemeId.Name = "txtOdemeId";
-            this.txtOdemeId.Size = new System.Drawing.Size(214, 28);
-            this.txtOdemeId.TabIndex = 1;
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.panel5.Controls.Add(this.lblIncomingAmount);
+            this.panel5.Controls.Add(this.labelControl3);
+            this.panel5.Location = new System.Drawing.Point(25, 32);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(272, 239);
+            this.panel5.TabIndex = 14;
             // 
-            // label1
+            // lblIncomingAmount
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(60, 48);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Kategori Id :";
+            this.lblIncomingAmount.Appearance.Font = new System.Drawing.Font("Calibri", 22F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.lblIncomingAmount.Appearance.ForeColor = System.Drawing.Color.White;
+            this.lblIncomingAmount.Appearance.Options.UseFont = true;
+            this.lblIncomingAmount.Appearance.Options.UseForeColor = true;
+            this.lblIncomingAmount.Location = new System.Drawing.Point(19, 76);
+            this.lblIncomingAmount.Name = "lblIncomingAmount";
+            this.lblIncomingAmount.Size = new System.Drawing.Size(94, 45);
+            this.lblIncomingAmount.TabIndex = 5;
+            this.lblIncomingAmount.Text = "0.00 ₺";
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Bold);
+            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl3.Appearance.Options.UseFont = true;
+            this.labelControl3.Appearance.Options.UseForeColor = true;
+            this.labelControl3.Location = new System.Drawing.Point(19, 23);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(239, 33);
+            this.labelControl3.TabIndex = 4;
+            this.labelControl3.Text = "Gelen Toplam Havale";
             // 
             // panel1
             // 
@@ -222,6 +225,7 @@
             this.btnDashboard.TabIndex = 7;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.UseVisualStyleBackColor = false;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // btnExit
             // 
@@ -235,6 +239,7 @@
             this.btnExit.TabIndex = 6;
             this.btnExit.Text = "Çıkış Yap";
             this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnSetting
             // 
@@ -248,6 +253,7 @@
             this.btnSetting.TabIndex = 5;
             this.btnSetting.Text = "Ayarlar";
             this.btnSetting.UseVisualStyleBackColor = false;
+            this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
             // 
             // btnBankTransaction
             // 
@@ -274,6 +280,7 @@
             this.btnExpense.TabIndex = 3;
             this.btnExpense.Text = "Giderler";
             this.btnExpense.UseVisualStyleBackColor = false;
+            this.btnExpense.Click += new System.EventHandler(this.btnExpense_Click);
             // 
             // btnBills
             // 
@@ -287,6 +294,7 @@
             this.btnBills.TabIndex = 2;
             this.btnBills.Text = "Faturalar";
             this.btnBills.UseVisualStyleBackColor = false;
+            this.btnBills.Click += new System.EventHandler(this.btnBills_Click);
             // 
             // btnBanks
             // 
@@ -300,6 +308,7 @@
             this.btnBanks.TabIndex = 1;
             this.btnBanks.Text = "Bankalar";
             this.btnBanks.UseVisualStyleBackColor = false;
+            this.btnBanks.Click += new System.EventHandler(this.btnBanks_Click);
             // 
             // btnCategories
             // 
@@ -313,6 +322,34 @@
             this.btnCategories.TabIndex = 0;
             this.btnCategories.Text = "Kategoriler";
             this.btnCategories.UseVisualStyleBackColor = false;
+            this.btnCategories.Click += new System.EventHandler(this.btnCategories_Click);
+            // 
+            // timerBnkTransaction
+            // 
+            this.timerBnkTransaction.Enabled = true;
+            this.timerBnkTransaction.Interval = 1000;
+            this.timerBnkTransaction.Tick += new System.EventHandler(this.timerBnkTransaction_Tick);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.dataGridView1);
+            this.panel3.Location = new System.Drawing.Point(260, 379);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1006, 329);
+            this.panel3.TabIndex = 10;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonShadow;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(1006, 329);
+            this.dataGridView1.TabIndex = 0;
             // 
             // FrmBankTransaction
             // 
@@ -326,14 +363,21 @@
             this.MaximumSize = new System.Drawing.Size(1283, 756);
             this.MinimumSize = new System.Drawing.Size(1283, 756);
             this.Name = "FrmBankTransaction";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmBankTransaction";
+            this.Load += new System.EventHandler(this.FrmBankTransaction_Load);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -342,17 +386,7 @@
 
         private System.Windows.Forms.Panel panel4;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnOdemeUpdate;
-        private System.Windows.Forms.Button btnOdemeDelete;
-        private System.Windows.Forms.Button btnOdemeCreate;
-        private System.Windows.Forms.Button btnOdemeList;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtOdemePeriot;
-        private System.Windows.Forms.TextBox txtOdemeId;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Button btnExit;
@@ -362,5 +396,17 @@
         private System.Windows.Forms.Button btnBills;
         private System.Windows.Forms.Button btnBanks;
         private System.Windows.Forms.Button btnCategories;
+        private System.Windows.Forms.Panel panel6;
+        private DevExpress.XtraEditors.LabelControl lblOutgoingAmount;
+        private DevExpress.XtraEditors.LabelControl labelControl4;
+        private System.Windows.Forms.Panel panel5;
+        private DevExpress.XtraEditors.LabelControl lblIncomingAmount;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private System.Windows.Forms.Panel panel7;
+        private DevExpress.XtraEditors.LabelControl lblTotalBankBalance;
+        private DevExpress.XtraEditors.LabelControl lblBankBalance;
+        private System.Windows.Forms.Timer timerBnkTransaction;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

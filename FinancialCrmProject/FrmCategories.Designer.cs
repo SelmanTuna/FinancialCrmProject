@@ -339,6 +339,7 @@
             this.MaximumSize = new System.Drawing.Size(1283, 756);
             this.MinimumSize = new System.Drawing.Size(1283, 756);
             this.Name = "FrmCategories";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmCategories";
             this.Load += new System.EventHandler(this.FrmCategories_Load);
             this.panel3.ResumeLayout(false);

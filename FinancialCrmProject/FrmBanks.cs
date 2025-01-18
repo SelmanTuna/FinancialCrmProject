@@ -79,7 +79,31 @@ namespace FinancialCrmProject
 
         private void btnBankTransaction_Click(object sender, EventArgs e)
         {
+            FrmBankTransaction frmBnkTr = new FrmBankTransaction();
+            frmBnkTr.Show();
+            this.Hide();
 
+        }
+
+        private void btnCategories_Click(object sender, EventArgs e)
+        {
+            FrmCategories frmcat = new FrmCategories();
+            frmcat.Show();
+            this.Hide();
+        }
+
+        private void btnBills_Click(object sender, EventArgs e)
+        {
+            FrmBilling frmbl = new FrmBilling();
+            frmbl.Show();
+            this.Hide();
+        }
+
+        private void btnSetting_Click(object sender, EventArgs e)
+        {
+            FrmSettings frmset = new FrmSettings();
+            frmset.Show();
+            this.Hide();
         }
     }
 }
