@@ -63,7 +63,7 @@
             this.panel4.Controls.Add(this.labelControl1);
             this.panel4.Location = new System.Drawing.Point(-1, 1);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1267, 65);
+            this.panel4.Size = new System.Drawing.Size(1267, 70);
             this.panel4.TabIndex = 11;
             // 
             // labelControl1
@@ -81,9 +81,9 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.dataGridView1);
-            this.panel3.Location = new System.Drawing.Point(260, 342);
+            this.panel3.Location = new System.Drawing.Point(255, 342);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1006, 366);
+            this.panel3.Size = new System.Drawing.Size(1011, 366);
             this.panel3.TabIndex = 10;
             // 
             // dataGridView1
@@ -95,7 +95,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1006, 366);
+            this.dataGridView1.Size = new System.Drawing.Size(1011, 366);
             this.dataGridView1.TabIndex = 0;
             // 
             // panel2
@@ -108,9 +108,9 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.btnUserDelete);
             this.panel2.Controls.Add(this.btnUserAdd);
-            this.panel2.Location = new System.Drawing.Point(260, 69);
+            this.panel2.Location = new System.Drawing.Point(255, 69);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1006, 267);
+            this.panel2.Size = new System.Drawing.Size(1011, 267);
             this.panel2.TabIndex = 9;
             // 
             // txtPassword

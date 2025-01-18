@@ -60,9 +60,9 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.dataGridView1);
-            this.panel3.Location = new System.Drawing.Point(261, 331);
+            this.panel3.Location = new System.Drawing.Point(255, 324);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(998, 380);
+            this.panel3.Size = new System.Drawing.Size(1004, 387);
             this.panel3.TabIndex = 6;
             // 
             // dataGridView1
@@ -74,7 +74,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(998, 380);
+            this.dataGridView1.Size = new System.Drawing.Size(1004, 387);
             this.dataGridView1.TabIndex = 0;
             // 
             // panel2
@@ -88,9 +88,9 @@
             this.panel2.Controls.Add(this.txtCategoryName);
             this.panel2.Controls.Add(this.txtCategoryId);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(261, 69);
+            this.panel2.Location = new System.Drawing.Point(254, 69);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(998, 256);
+            this.panel2.Size = new System.Drawing.Size(1005, 256);
             this.panel2.TabIndex = 5;
             // 
             // btnCategoryUpdate

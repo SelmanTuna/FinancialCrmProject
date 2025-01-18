@@ -80,7 +80,7 @@
             this.panel1.Controls.Add(this.btnCategories);
             this.panel1.Location = new System.Drawing.Point(0, 62);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(247, 631);
+            this.panel1.Size = new System.Drawing.Size(247, 647);
             this.panel1.TabIndex = 0;
             // 
             // btnDashboard

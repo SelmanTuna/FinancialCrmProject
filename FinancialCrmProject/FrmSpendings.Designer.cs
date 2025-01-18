@@ -69,7 +69,7 @@
             this.panel4.Controls.Add(this.labelControl1);
             this.panel4.Location = new System.Drawing.Point(-1, 1);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1267, 65);
+            this.panel4.Size = new System.Drawing.Size(1267, 72);
             this.panel4.TabIndex = 11;
             // 
             // labelControl1
@@ -89,7 +89,7 @@
             this.panel3.Controls.Add(this.dataGridView1);
             this.panel3.Location = new System.Drawing.Point(260, 358);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1006, 340);
+            this.panel3.Size = new System.Drawing.Size(1006, 350);
             this.panel3.TabIndex = 10;
             // 
             // dataGridView1
@@ -101,7 +101,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1006, 340);
+            this.dataGridView1.Size = new System.Drawing.Size(1006, 350);
             this.dataGridView1.TabIndex = 0;
             // 
             // panel2
@@ -280,7 +280,7 @@
             this.panel1.Controls.Add(this.btnCategories);
             this.panel1.Location = new System.Drawing.Point(-1, 69);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(255, 639);
+            this.panel1.Size = new System.Drawing.Size(264, 639);
             this.panel1.TabIndex = 8;
             // 
             // btnDashboard

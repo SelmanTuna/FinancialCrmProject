@@ -90,9 +90,9 @@
             this.panel2.Controls.Add(this.panel7);
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.panel5);
-            this.panel2.Location = new System.Drawing.Point(260, 69);
+            this.panel2.Location = new System.Drawing.Point(254, 57);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1006, 304);
+            this.panel2.Size = new System.Drawing.Size(1012, 316);
             this.panel2.TabIndex = 9;
             // 
             // panel7
@@ -102,7 +102,7 @@
             this.panel7.Controls.Add(this.lblBankBalance);
             this.panel7.Location = new System.Drawing.Point(646, 32);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(313, 239);
+            this.panel7.Size = new System.Drawing.Size(313, 203);
             this.panel7.TabIndex = 16;
             // 
             // lblTotalBankBalance
@@ -136,7 +136,7 @@
             this.panel6.Controls.Add(this.labelControl4);
             this.panel6.Location = new System.Drawing.Point(338, 32);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(274, 239);
+            this.panel6.Size = new System.Drawing.Size(274, 203);
             this.panel6.TabIndex = 15;
             // 
             // lblOutgoingAmount
@@ -170,7 +170,7 @@
             this.panel5.Controls.Add(this.labelControl3);
             this.panel5.Location = new System.Drawing.Point(25, 32);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(272, 239);
+            this.panel5.Size = new System.Drawing.Size(272, 203);
             this.panel5.TabIndex = 14;
             // 
             // lblIncomingAmount
@@ -208,9 +208,9 @@
             this.panel1.Controls.Add(this.btnBills);
             this.panel1.Controls.Add(this.btnBanks);
             this.panel1.Controls.Add(this.btnCategories);
-            this.panel1.Location = new System.Drawing.Point(-1, 69);
+            this.panel1.Location = new System.Drawing.Point(-1, 57);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(255, 639);
+            this.panel1.Size = new System.Drawing.Size(255, 651);
             this.panel1.TabIndex = 8;
             // 
             // btnDashboard
@@ -333,9 +333,9 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.dataGridView1);
-            this.panel3.Location = new System.Drawing.Point(260, 379);
+            this.panel3.Location = new System.Drawing.Point(254, 367);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1006, 329);
+            this.panel3.Size = new System.Drawing.Size(1012, 341);
             this.panel3.TabIndex = 10;
             // 
             // dataGridView1
@@ -348,7 +348,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1006, 329);
+            this.dataGridView1.Size = new System.Drawing.Size(1012, 341);
             this.dataGridView1.TabIndex = 0;
             // 
             // FrmBankTransaction

@@ -72,9 +72,9 @@
             this.panel1.Controls.Add(this.btnBills);
             this.panel1.Controls.Add(this.btnBanks);
             this.panel1.Controls.Add(this.btnCategories);
-            this.panel1.Location = new System.Drawing.Point(2, 70);
+            this.panel1.Location = new System.Drawing.Point(2, 55);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(249, 636);
+            this.panel1.Size = new System.Drawing.Size(260, 651);
             this.panel1.TabIndex = 1;
             // 
             // btnDashboard
@@ -203,9 +203,9 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.txtOdemeId);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(257, 70);
+            this.panel2.Location = new System.Drawing.Point(257, 58);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(998, 254);
+            this.panel2.Size = new System.Drawing.Size(1009, 266);
             this.panel2.TabIndex = 2;
             // 
             // btnOdemeUpdate
@@ -335,9 +335,9 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.dataGridView1);
-            this.panel3.Location = new System.Drawing.Point(257, 330);
+            this.panel3.Location = new System.Drawing.Point(257, 320);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(998, 376);
+            this.panel3.Size = new System.Drawing.Size(1012, 386);
             this.panel3.TabIndex = 3;
             // 
             // dataGridView1
@@ -349,7 +349,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(998, 376);
+            this.dataGridView1.Size = new System.Drawing.Size(1012, 386);
             this.dataGridView1.TabIndex = 0;
             // 
             // panel4

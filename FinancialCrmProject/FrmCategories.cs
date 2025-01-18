@@ -53,7 +53,7 @@ namespace FinancialCrmProject
 
             db.Categories.Add(cat);
             db.SaveChanges();
-            MessageBox.Show("Ekleme başarılı.", "Kategori Ekleme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Ekleme İşlemi Başarılı.", "Ekleme Ekranı", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             var values = db.Categories.ToList();
             dataGridView1.DataSource = values;
@@ -80,7 +80,7 @@ namespace FinancialCrmProject
             var removeValue = db.Categories.Find(id);
             db.Categories.Remove(removeValue);
             db.SaveChanges();
-            MessageBox.Show("Silme İşlme Başarılı.", "Silme Ekranı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            MessageBox.Show("Silme İşlemi Başarılı.", "Silme Ekranı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                       
         }
 
