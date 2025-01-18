@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FinancialCrmProject.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,21 +16,37 @@ namespace FinancialCrmProject
         public FrmLogin()
         {
             InitializeComponent();
+            this.AcceptButton = btnEnter;
         }
 
         private void btnEnter_Click(object sender, EventArgs e)
         {
-            if(txtUserName.Text=="admin" && txtPassword.Text == "1234")
+            string username = txtUserName.Text;
+            string password = txtPassword.Text;
+
+            if(string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
-                FrmDashboard frmDas = new FrmDashboard();
-                frmDas.Show();
-                this.Hide();
+                MessageBox.Show("Kullanıcı Adı ve Şifre Boş Olamaz!", "Login Bilgilendirme Sayfası", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
-            else
+
+            using (var context = new FinancialCrmDbEntities())
             {
-                MessageBox.Show("Giriş Başarısız! Tekrar Deneyin!", "Giriş Sayfası", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtUserName.Clear();
-                txtPassword.Clear();
+                var user = context.Users
+                    .FirstOrDefault(u => u.Username == username && u.Password == password);
+
+                if(user!= null)
+                {
+                    FrmDashboard frmDas = new FrmDashboard();
+                    frmDas.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Kullanıcı Adı veya Şifre Hatalı! Tekrar Deneyin.", "Login Bilgilendirme Sayfası", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtUserName.Clear();
+                    txtPassword.Clear();
+                }
             }
         }
     }
